@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Font Family */
+    --font-poppins: Poppins;
+    /* Colors */
+    --color-primary: orange;
+}
+
+body {
+    font-family: var(--font-poppins);
+}
+
+/* Navbar */
+.navbarpage {
+    width: 100%;
+    height: 110vh;
+    background-color: #FBEBB5;
+}
+
+
+/* Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 38px 150px;
+}
+
+/* ele2 and ele3*/
+.navEle2 ul,
+.navEle3 ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 75px;
+}
+
+.navEle2 ul a,
+.navEle3 ul a {
+    text-decoration: none;
+    color: inherit;
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Two Section */
+.twoSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ensure proper spacing between sections */
+    padding: 0 150px;
+    /* Add padding to maintain consistent spacing with the page */
+    box-sizing: border-box;
+}
+
+/* section One */
+.sectionOne {
+    width: 40%;
+    /* Adjust width for better proportion */
+    font-family: var(--font-poppins);
+}
+
+.sectionOne h5 {
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.sectionOne p {
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding-bottom: 13px;
+    padding-top: 35px;
+    cursor: pointer;
+}
+
+/* section Two */
+.sectionTwo {
+    width: 55%;
+    /* Adjust image width for balance */
+    display: flex;
+    justify-content: flex-end;
+    /* Align image to the right */
+}
+
+.sectionTwo img {
+    min-width: 565px;
+    max-width: 676px;
+    object-fit: cover;
+}
+
+/* twoTable */
+/* Parent Section: twoTable */
+.twoTable {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 150px;
+    /* Consistent top, bottom, and side spacing */
+    box-sizing: border-box;
+    background-color: #FAF4F4;
+}
+
+/* Individual Tables */
+.firstTable,
+.secondTable {
+    width: 50%;
+    text-align: center;
+    font-family: var(--font-poppins);
+}
+
+.firstTable img,
+.secondTable img {
+    width: 100%;
+    max-width: 585px;
+    min-width: 210px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.firstTable h6,
+.secondTable h6 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.firstTable p,
+.secondTable p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    /* Optional: muted text color */
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding-bottom: 5px;
+
+}
+
+/* Parent Section: topPick */
+.topPick {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 55px 150px;
+    /* Consistent spacing */
+    box-sizing: border-box;
+}
+
+/* Section Heading */
+.topPick h5 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.topPick p:nth-of-type(1) {
+    text-align: center;
+    font-size: 16px;
+    color: #9F9F9F;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Boxes Section */
+.boxes_section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* Enable wrapping for responsiveness */
+    align-items: center;
+    justify-content: space-between;
+    /* Even spacing between boxes */
+    gap: 30px;
+    /* Add spacing between boxes */
+}
+
+/* Individual Boxes */
+.boxes_section .box1 {
+    width: 23%;
+    text-align: left;
+    margin-top: 65px;
+}
+.box1 a{
+color: inherit;
+text-decoration: none;
+}
+.boxes_section .box1 img {
+    width: 100%;
+    /* Ensure image takes full width of the box */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-width: 287px;
+    /* Limit maximum width */
+    margin-bottom: 15px;
+    /* Space below images */
+}
+
+.boxes_section .box1 p {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 11px;
+}
+
+.boxes_section .box1 h6 {
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    text-align: left;
+}
+
+#views {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin: 70px auto 0 auto;
+    border-bottom: 2px solid #000;
+    display: block;
+    padding-bottom: 19px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+/* asgaardSofa */
+.asgaardSofa {
+    width: 100%;
+    background-color: #FFF9E5;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    margin-top: 25px;
+}
+
+.part1_image {
+    width: 65%;
+}
+
+.part2_text {
+    width: 30%;
+}
+
+.part1_image img {
+    width: 100%;
+}
+
+.part2_text p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.part2_text h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.part2_text button {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 17px 75px;
+    border: 1px solid black;
+    background-color: transparent;
+    margin-top: 33px;
+}
+
+/* Our Blog Section */
+.ourBlog {
+    margin-top: 80px;
+    padding: 0 150px;
+    box-sizing: border-box;
+}
+
+.ourBlog h5 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.ourBlog p {
+    margin-top: 13px;
+    margin-bottom: 65px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9f9f9f;
+    text-align: center;
+}
+
+/* Card Container */
+.card_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping for responsiveness */
+    justify-content: space-between;
+    /* Space between cards */
+    gap: 30px;
+    /* Gap between cards */
+}
+
+/* Individual Card */
+.card1 {
+    width: 31%;
+    /* Default: 3 cards per row */
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.card1 img {
+    width: 100%;
+    /* Make image responsive */
+    height: auto;
+    max-width: 393px;
+    /* Limit maximum width */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card1 p {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    margin: 0;
+    width: max-content;
+}
+
+.card1 h6 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.card1 span {
+    font-size: 16px;
+}
+
+#calendar {
+    padding-left: 20px;
+}
+
+#calendar i,
+#clock i {
+    padding-right: 12px;
+}
+
+/* Our Insta */
+.ourInsta {
+    margin-top: 65px;
+    padding: 80px 20px;
+    /* Adjust padding for spacing and responsiveness */
+    background-image: url('/Images/Our Instagram.png');
+    background-size: cover;
+    /* Ensure the image covers the entire section */
+    background-position: center;
+    /* Center the background image */
+    text-align: center;
+    /* Center all content within the section */
+}
+
+.ourInsta h3 {
+    font-size: 60px;
+    /* Responsive font size */
+    font-weight: bold;
+    color: black;
+    /* Ensure text is visible on the background */
+    margin-bottom: 10px;
+}
+
+.ourInsta p {
+    font-size: 20px;
+    /* Adjust font size for better responsiveness */
+    font-weight: 400;
+    color: black;
+    /* Ensure visibility on the background */
+    margin-bottom: 30px;
+}
+
+.ourInsta button {
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 17px 82px;
+    border: none;
+    background-color: #FFFFFF;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Add hover effect */
+}
+
+.ourInsta button:hover {
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+/* Footer */
+.footer {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    margin: 93px 100px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.address {
+    flex: 1 1 200px;
+}
+
+.address p {
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.links,
+.help,
+.newsletter {
+    flex: 1 1 150px;
+    line-height: 45px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #9F9F9F;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.newsletter form {
+    display: flex;  
+    gap: 10px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+    display: block;
+    padding-bottom: 2px;
+    width: fit-content;
+}
+
+.newsletter button {
+    font-size: 14px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+    display: block;
+    padding-bottom: 2px;
+    width: fit-content;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #9f9f9f;
+}
+
+.footer hr{
+    margin: 35px 0;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        width: 100%;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .card1 {
+        width: 48%;
+        /* 2 cards per row */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card1 {
+        width: 100%;
+        /* 1 card per row */
+    }
+
+    .ourBlog {
+        padding: 30px 20px;
+        /* Adjust padding for smaller screens */
+    }
+}
+
+
+/* responsive  1200,1100,1000,500,430*/
+@media (max-width: 1200px) {
+
+    .navEle2 ul,
+    .navEle3 ul {
+        gap: 32px;
+    }
+
+    .part2_text button {
+        font-size: 20px;
+        padding: 17px 61px;
+        margin-top: 24px;
+    }
+
+    .part2_text h2 {
+        font-size: 31px;
+    }
+
+    .part2_text p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .twoSection {
+        flex-direction: column;
+    }
+
+    .sectionOne,
+    .sectionTwo {
+        width: 100%;
+    }
+
+    .sectionTwo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectionTwo img {
+        min-width: 350px;
+    }
+
+    .twoTable {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    .twoSection {
+        padding: 0 20px;
+    }
+
+    .container {
+        padding: 38px 20px;
+    }
+
+    .firstTable,
+    .secondTable {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 180px;
+    }
+
+    .topPick {
+        padding: 55px 20px;
+    }
+
+    .part1_image {
+        width: 100%;
+    }
+
+    .asgaardSofa {
+        width: 100%;
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .part2_text button {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 17px 118px;
+        border: 1px solid black;
+        background-color: transparent;
+        margin-top: 33px;
+    }
+
+    .part2_text h2 {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .part2_text p {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .part2_text {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navEle3 ul {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .boxes_section {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .sectionOne {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .part2_text button {
+        font-size: 20px;
+        padding: 17px 61px;
+        margin-top: 24px;
+    }
+
+    .part2_text h2 {
+        font-size: 31px;
+    }
+
+    .part2_text p {
+        font-size: 18px;
+    }
+
+    .ourInsta p {
+        font-size: 12px;
+    }
+
+    .ourInsta h3 {
+        font-size: 32px;
+    }
+
+    .ourInsta button {
+        font-size: 16px;
+        border-radius: 50px;
+        padding: 14px 60px;
+    }
+}
+
+@media (max-width: 430px) {
+    .sectionOne p {
+        font-size: 10px;
+    }
+
+    .sectionOne h5 {
+        font-size: 36px;
+    }
+
+    .navEle2 ul {
+        gap: 15px;
+    }
+
+    .card1 p {
+        font-size: 16px;
+    }
+
+    .card1 h6 {
+        font-size: 18px;
+    }
+
+    .card1 span {
+        font-size: 13px;
+    }
+}
+
+/* Extra */
+@media screen and (max-width: 1200px) {
+    .boxes_section .box1 {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .boxes_section .box1 {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .boxes_section .box1 {
+        width: 100%;
+    }
+
+    .topPick {
+        padding: 30px 20px;
+    }
+}

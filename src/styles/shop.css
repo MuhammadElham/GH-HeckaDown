@@ -1,0 +1,297 @@
+/* Banner */
+.banner {
+    width: 100%;
+    background-image: url('/Images/Rectangle 1.png');
+    background-size: cover;
+    /* Ensure the background covers the full section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner img {
+    width: 77px;
+    height: 77px;
+    margin-bottom: 20px;
+}
+
+.banner h3 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.home_icon_shop {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_icon_shop p,
+.home_icon_shop i {
+    font-size: 16px;
+    color: black;
+}
+
+.home_icon_shop i {
+    padding-bottom: 8px;
+}
+
+/* 480px 768*/
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .banner h3 {
+        font-size: 36px;
+        /* Smaller font size on smaller screens */
+    }
+
+    .home_icon_shop p,
+    .home_icon_shop i {
+        font-size: 14px;
+        /* Reduce font size */
+    }
+
+    .banner img {
+        width: 60px;
+        /* Make logo smaller on small screens */
+        height: 60px;
+    }
+}
+
+/* Filter Section */
+.filter {
+    width: 100%;
+    background-color: #FAF4F4;
+}
+
+.filter_margin {
+    margin: 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Ensures proper wrapping on smaller screens */
+    gap: 20px;
+    /* Adds spacing when elements wrap */
+    padding: 40px 0;
+}
+
+.part1,
+.part2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Adds spacing between inner items */
+    flex-wrap: wrap;
+    /* Adjusts layout for smaller screens */
+}
+
+.part1 p,
+.part2 p {
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+    font-weight: 400;
+}
+
+.part1 img,
+.part2 img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.part1 .fa-sliders {
+    font-size: 18px;
+    color: #000;
+}
+
+.part2 #num {
+    cursor: pointer;
+    color: #9F9F9F;
+    background-color: white;
+    padding: 14px 18px;
+    font-weight: 400;
+}
+
+/* Page Number Section */
+.pageNumber {
+    display: flex;
+    /* Aligns page numbers in a row */
+    justify-content: center;
+    /* Centers the page numbers */
+    gap: 10px;
+    /* Adds spacing between page numbers */
+    margin: 40px 0 95px 0;
+}
+
+.pageNumber p {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    /* Adjusted for better emphasis */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FBEBB5;
+    cursor: pointer;
+    /* Adds pointer to indicate interactivity */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.pageNumber #dif {
+    background-color: #FFF9E5;
+}
+
+/* Active Page Number Styling */
+.pageNumber p.active {
+    background-color: #F5CF72;
+    /* Highlight active page */
+    font-weight: 600;
+    /* Make the active number bold */
+}
+
+/* Hover Effect */
+.pageNumber p:hover {
+    background-color: #F5CF72;
+}
+
+/* freeDielev */
+.freeDiliev {
+    width: 100%;
+    background-color: #FAF4F4;
+    margin: 100px 0;
+}
+
+.subfreeDiliev {
+    padding: 100px 150px;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.first {
+    width: 32%;
+}
+
+.first h6 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.first p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .subfreeDiliev {
+        padding: 100px 150px;
+        display: flex;
+        align-items: center;
+        gap: 44px;
+        flex-wrap: wrap;
+    }
+
+    .first {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .subfreeDiliev {
+        padding: 100px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter_margin {
+        margin: 15px 20px;
+        /* Reduce margins for smaller screens */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+        /* Align items to the left */
+    }
+
+    .part1,
+    .part2 {
+        flex-direction: row;
+        justify-content: flex-start;
+        /* Align inner items to the left */
+        gap: 10px;
+        /* Reduce spacing */
+    }
+
+    .pageNumber p {
+        font-size: 18px;
+        /* Slightly smaller font size for tablets */
+        padding: 12px 25px;
+        /* Adjust padding for smaller screens */
+    }
+    .first {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h3 {
+        font-size: 28px;
+        /* Even smaller font for very small screens */
+    }
+
+    .home_icon_shop {
+        flex-direction: column;
+        /* Stack the items vertically */
+        gap: 4px;
+        /* Adjust gap */
+    }
+
+    .home_icon_shop p,
+    .home_icon_shop i {
+        font-size: 12px;
+        /* Further reduce font size */
+    }
+
+    .banner img {
+        width: 50px;
+        /* Adjust logo size for small screens */
+        height: 50px;
+    }
+
+    .filter_margin {
+        margin: 10px 15px;
+        /* Further reduce margins */
+    }
+
+    .part1 p,
+    .part2 p {
+        font-size: 14px;
+        /* Reduce text size for smaller screens */
+    }
+
+    .part1 img,
+    .part2 img {
+        width: 18px;
+        height: 18px;
+        /* Scale down icons */
+    }
+
+    .part1 .fa-sliders {
+        font-size: 16px;
+        /* Adjust slider icon size */
+    }
+
+    .pageNumber p {
+        font-size: 16px;
+        /* Smaller font for mobile screens */
+        padding: 10px 20px;
+        /* Adjust padding further for compact look */
+    }
+}

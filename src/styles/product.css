@@ -1,0 +1,218 @@
+.imagesbox {
+    width: 423px;
+    max-height: 400px;
+    min-height: 250px;
+    background-color: #FFF9E5;
+    border-radius: 18px;
+}
+
+.imagesbox img {
+    width: 100%;
+}
+
+.product-details {
+    width: 100%;
+}
+
+.product-container {
+    margin: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+}
+
+.product-info h3 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.product-info h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #9F9F9F
+}
+
+.product-info p {
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.counter {
+    padding: 16px 18px;
+    border: 1px solid lightgray;
+}
+
+.counter span {
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    padding: 0 17px;
+}
+
+.add-to-cart button {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 17px 48px;
+    border-radius: 15px;
+    background: transparent;
+    border: 1px solid lightgray;
+    transition: all 0.3s ease;
+}
+
+.add-to-cart button:hover {
+    background-color: black;
+    /* Change background to black on hover */
+    border-color: lightgray;
+    /* Keep the border color the same */
+    transform: scale(1.05);
+    /* Slightly enlarge the button */
+    cursor: pointer;
+    /* Change cursor to pointer */
+    color: white;
+}
+
+/* Optional: Add animation to button */
+.add-to-cart button {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* section */
+.description {
+    width: 100%;
+}
+
+.descdet {
+    margin: 150px 150px;
+}
+
+.threeHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 40px;
+}
+
+.threeHead p {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+.threeHead #three {
+    color: #9F9F9F;
+}
+
+.descdet p {
+    font-weight: 400;
+}
+
+
+
+
+
+.main-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0 150px;
+}
+
+.part11 {
+    width: 46%;
+    height: max-content;
+    background-color: #FFF9E5;
+    border-radius: 12px;
+
+}
+
+.part11 img {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .product-container {
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .product-info {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        margin: 0 20px;
+    }
+
+    .part11 {
+        width: 100%;
+    }
+    .descdet {
+        margin: 150px 20px;
+    }
+    .threeHead {
+        display: flex
+    ;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+    .add-to-cart button {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 16px 36px;
+        border-radius: 15px;
+    }
+
+    .counter {
+        padding: 10px 10px;
+        border: 1px solid lightgray;
+    }
+    .threeHead p {
+        font-size: 16px;
+       
+    }
+}

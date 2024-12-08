@@ -1,30 +1,15 @@
-import Link from "next/link"; // Import Next.js Link
 import Head from "next/head";
-import Image from "next/image";
-// import Images from "next/Images";
-import localFont from "next/font/local";
-
-// // Fonts
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
-
-export default function Home() {
+import Link from "next/link";
+import Script from "next/script";
+import Image from "next/image"; 
+export default function ProjectPage() {
   return (
-     <>
-     <Head>
-     
+<>
+<Head>
+      
   <meta charSet="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HeckaDown 0</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Product</title>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -32,11 +17,14 @@ export default function Home() {
     crossOrigin="anonymous"
     referrerPolicy="no-referrer"
   />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="product.css" />
 
 
-     </Head>
-  {/* Navbar Page */}
-  <section className="navbarpage" style={{ height: "100vh", backgroundColor: "#FBEBB5" }}>
+      </Head>
+
+  {/* Navbar */}
+  <section className="navbarpage" style={{ height: "auto", backgroundColor: "transparent" }}>
   <div className="widthPrespec">
     {/* Navbar Start */}
     <div className="container">
@@ -84,7 +72,7 @@ export default function Home() {
     </div>
     {/* Navbar End */}
     {/* Two Section */}
-    <div className="twoSection">
+    {/* <div className="twoSection">
       <div className="sectionOne">
         <h5>Rocket single seater</h5>
         <p>Shop Now</p>
@@ -92,23 +80,62 @@ export default function Home() {
       <div className="sectionTwo">
         <img src="/Images/Rocket single seater 1.png" alt="Rocket Single Seater" />
       </div>
-    </div>
+    </div> */}
   </div>
 </section>
-
-  {/* After Nav */}
-  <section className="twoTable">
-    <div className="firstTable">
-      <img src="Images/Side Table1.png" alt="" />
-      <h6>Side Table</h6>
-      <p>View More</p>
-    </div>
-    <div className="secondTable">
-      <img src="Images/Site Table2.png" alt="" />
-      <h6>Side Table</h6>
-      <p>View More</p>
+  {/* Product */}
+  <section className="product-details">
+    <div className="product-container">
+      <div className="imagesbox">
+        <img id="product-image" src="" alt="Product Image" />
+      </div>
+      <div className="product-info">
+        <h3 id="product-name" />
+        <h4 id="product-price" />
+        <p id="product-description" />
+        <div className="add-to-cart">
+          <div className="counter">
+            <span>-</span>
+            <span>1</span>
+            <span>+</span>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
     </div>
   </section>
+  {/* description */}
+  <section className="description">
+    <div className="descdet">
+      <div className="threeHead">
+        <p>Description</p>
+        <p id="three">Additional Information</p>
+        <p id="three">Reviews [5]</p>
+      </div>
+      <p>
+        Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable
+        active stereo speaker takes the unmistakable look and sound of Marshall,
+        unplugs the chords, and takes the show on the road. <br />
+        <br /> Weighing in under 7 pounds, the Kilburn is a lightweight piece of
+        vintage styled engineering. Setting the bar as one of the loudest
+        speakers in its class, the Kilburn is a compact, stout-hearted hero with
+        a well-balanced audio which boasts a clear midrange and extended highs
+        for a sound that is both articulate and pronounced. The analogue knobs
+        allow you to fine tune the controls to your personal preferences while
+        the guitar-influenced leather strap enables easy and stylish travel.
+      </p>
+    </div>
+  </section>
+  {/* images */}
+  <div className="main-container">
+    <div className="part11">
+      <img src="Images/Maya sofa three seater 1.png" alt="" />
+    </div>
+    <div className="part11">
+      <img src="Images/Maya sofa three seater 1.png" alt="" />
+    </div>
+  </div>
+  {/* Product Item */}
   {/* Top Pick */}
   <section className="topPick">
     <h5>Top Picks For You</h5>
@@ -140,69 +167,8 @@ export default function Home() {
     </div>
     <p id="views">View More</p>
   </section>
-  {/* Asgaard sofa */}
-  <section className="asgaardSofa">
-    <div className="part1_image">
-      <img src="Images/Asgaard sofa 1.png" alt="" />
-    </div>
-    <div className="part2_text">
-      <p>New Arrivals</p>
-      <h2>Asgaard sofa</h2>
-      <button>Order Now</button>
-    </div>
-  </section>
-  {/* Our Blog */}
-  <section className="ourBlog">
-    <h5>Our Blogs</h5>
-    <p>Find a bright ideal to suit your taste with our great selection</p>
-    <div className="card_container">
-      <div className="card1">
-        <img src="Images/Going all in1.png" alt="" />
-        <p>Going all-in with millennial design</p>
-        <h6>Read More</h6>
-        <span id="clock">
-          <i className="fa-regular fa-clock" />5 min
-        </span>
-        <span id="calendar">
-          <i className="fa-regular fa-calendar" />
-          12<sup>th</sup> Oct 2022
-        </span>
-      </div>
-      <div className="card1">
-        <img src="Images/Going all in2.png" alt="" />
-        <p>Going all-in with millennial design</p>
-        <h6>Read More</h6>
-        <span id="clock">
-          <i className="fa-regular fa-clock" />5 min
-        </span>
-        <span id="calendar">
-          <i className="fa-regular fa-calendar" />
-          12<sup>th</sup> Oct 2022
-        </span>
-      </div>
-      <div className="card1">
-        <img src="Images/Going all in3.png" alt="" />
-        <p>Going all-in with millennial design</p>
-        <h6>Read More</h6>
-        <span id="clock">
-          <i className="fa-regular fa-clock" />5 min
-        </span>
-        <span id="calendar">
-          <i className="fa-regular fa-calendar" />
-          12<sup>th</sup> Oct 2022
-        </span>
-      </div>
-    </div>
-    <p id="views">View All Post</p>
-  </section>
-  {/* Our Instagram */}
-  <section className="ourInsta">
-    <h3>Our Instagram</h3>
-    <p>Follow our store on Instagram</p>
-    <button>Follow Us</button>
-  </section>
-  {/* Footer */}
-  <footer className="footer">
+   {/* Footer */}
+   <footer className="footer">
   <div className="footer-container">
     <div className="address">
       <p>400 University Drive Suite 200 Coral Gables,</p>
@@ -256,7 +222,9 @@ export default function Home() {
   </div>
 </footer>
 
+<Script src="products.js"></Script>
 
-    </>
+</>
+
   );
 }
