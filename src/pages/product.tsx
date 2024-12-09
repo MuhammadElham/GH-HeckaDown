@@ -8,14 +8,21 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
   
-  // Example product data (You can move this to a separate file or fetch it from an API later)
-  const products = {
-    "TrentonModularSofa3": {
-      name: "Trenton Modular Sofa 3",
-      price: "Rs. 25,000.00",
-      image: "/Images/Trenton modular.png",
-      description: "A beautifully crafted wooden seat with sturdy legs and a smooth finish, designed for comfort and style in any room."
-    },
+interface Product {
+  name: string;
+  price: string;
+  image: string;
+  description: string;
+}
+
+// Define the type for the products object
+const products: { [key: string]: Product } = {
+  "TrentonModularSofa3": {
+    name: "Trenton Modular Sofa 3",
+    price: "Rs. 25,000.00",
+    image: "/Images/Trenton modular.png",
+    description: "A beautifully crafted wooden seat with sturdy legs and a smooth finish, designed for comfort and style in any room."
+  },
     "GraniteDiningTable": {
       name: "Granite Dining Table with Dining Chair",
       price: "Rs. 25,000.00",
@@ -109,13 +116,15 @@ import Link from "next/link";
   };
   
   export default function ProductPage() {
-    const [product, setProduct] = useState<any>(null);
+    const [product, setProduct] = useState<Product | null>(null);
     const router = useRouter();
+    
+    // Destructure `product` from query parameters (productId could be undefined initially)
     const { product: productId } = router.query;
   
     useEffect(() => {
-      // If the productId is available and valid, set the product data
-      if (productId && products[productId]) {
+      // Check if productId is valid and exists in the products object
+      if (productId && typeof productId === 'string' && products[productId]) {
         setProduct(products[productId]);
       }
     }, [productId]);
@@ -126,7 +135,6 @@ import Link from "next/link";
     }
   
     return (
-
     <>
       <Head>
         <meta charSet="UTF-8" />
