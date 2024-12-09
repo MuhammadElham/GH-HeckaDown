@@ -1,26 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
 import Script from "next/script";
-import Image from "next/image"; 
+
 export default function ProjectPage() {
   return (
-<>
-<Head>
-      
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Product</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-    crossOrigin="anonymous"
-    referrerPolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="product.css" />
-
-
+    <>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product</title>
       </Head>
 
   {/* Navbar */}
@@ -71,16 +59,6 @@ export default function ProjectPage() {
       </div>
     </div>
     {/* Navbar End */}
-    {/* Two Section */}
-    {/* <div className="twoSection">
-      <div className="sectionOne">
-        <h5>Rocket single seater</h5>
-        <p>Shop Now</p>
-      </div>
-      <div className="sectionTwo">
-        <img src="/Images/Rocket single seater 1.png" alt="Rocket Single Seater" />
-      </div>
-    </div> */}
   </div>
 </section>
   {/* Product */}
@@ -129,10 +107,10 @@ export default function ProjectPage() {
   {/* images */}
   <div className="main-container">
     <div className="part11">
-      <img src="Images/Maya sofa three seater 1.png" alt="" />
+      <img src="Images/Maya sofa three seater 1.png" alt="Maya sofa three seater 1" />
     </div>
     <div className="part11">
-      <img src="Images/Maya sofa three seater 1.png" alt="" />
+      <img src="Images/Maya sofa three seater 1.png" alt="Maya sofa three seater 1" />
     </div>
   </div>
   {/* Product Item */}
@@ -145,22 +123,22 @@ export default function ProjectPage() {
     </p>
     <div className="boxes_section">
       <div className="box1">
-        <img src="Images/Trenton modular.png" alt="" />
+        <img src="Images/Trenton modular.png" alt="Trenton modular" />
         <p>Trenton modular sofa_3</p>
         <h6>Rs. 25,000.00</h6>
       </div>
       <div className="box1">
-        <img src="Images/Granite dining table.png" alt="" />
+        <img src="Images/Granite dining table.png" alt="Granite dining table" />
         <p>Granite dining table with dining chair</p>
         <h6>Rs. 25,000.00</h6>
       </div>
       <div className="box1">
-        <img src="Images/Outdoor bar table.png" alt="" />
+        <img src="Images/Outdoor bar table.png" alt="Outdoor bar table" />
         <p>Outdoor bar table and stool</p>
         <h6>Rs. 25,000.00</h6>
       </div>
       <div className="box1">
-        <img src="Images/Plain console.png" alt="" />
+        <img src="Images/Plain console.png" alt="Plain console" />
         <p>Plain console with teak mirror</p>
         <h6>Rs. 25,000.00</h6>
       </div>

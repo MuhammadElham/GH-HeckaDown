@@ -1,40 +1,14 @@
 import Link from "next/link"; // Import Next.js Link
 import Head from "next/head";
-import Image from "next/image";
-// import Images from "next/Images";
-import localFont from "next/font/local";
-
-// // Fonts
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
 
 export default function Home() {
   return (
-     <>
-     <Head>
-     
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HeckaDown 0</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-    crossOrigin="anonymous"
-    referrerPolicy="no-referrer"
-  />
-
-
-     </Head>
+    <>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HeckaDown 0</title>
+      </Head>
   {/* Navbar Page */}
   <section className="navbarpage" style={{ height: "100vh", backgroundColor: "#FBEBB5" }}>
   <div className="widthPrespec">
@@ -99,12 +73,12 @@ export default function Home() {
   {/* After Nav */}
   <section className="twoTable">
     <div className="firstTable">
-      <img src="Images/Side Table1.png" alt="" />
+      <img src="Images/Side Table1.png" alt="Side Table" />
       <h6>Side Table</h6>
       <p>View More</p>
     </div>
     <div className="secondTable">
-      <img src="Images/Site Table2.png" alt="" />
+      <img src="Images/Site Table2.png" alt="Site Table2" />
       <h6>Side Table</h6>
       <p>View More</p>
     </div>
@@ -118,22 +92,22 @@ export default function Home() {
     </p>
     <div className="boxes_section">
       <div className="box1">
-        <img src="Images/Trenton modular.png" alt="" />
+        <img src="Images/Trenton modular.png" alt="Trenton modular" />
         <p>Trenton modular sofa_3</p>
         <h6>Rs. 25,000.00</h6>
       </div>
       <div className="box1">
-        <img src="Images/Granite dining table.png" alt="" />
+        <img src="Images/Granite dining table.png" alt="Granite dining table" />
         <p>Granite dining table with dining chair</p>
         <h6>Rs. 25,000.00</h6>
       </div>
       <div className="box1">
-        <img src="Images/Outdoor bar table.png" alt="" />
+        <img src="Images/Outdoor bar table.png" alt="Outdoor bar table" />
         <p>Outdoor bar table and stool</p>
         <h6>Rs. 25,000.00</h6>
       </div>
       <div className="box1">
-        <img src="Images/Plain console.png" alt="" />
+        <img src="Images/Plain console.png" alt="Plain console" />
         <p>Plain console with teak mirror</p>
         <h6>Rs. 25,000.00</h6>
       </div>
@@ -143,7 +117,7 @@ export default function Home() {
   {/* Asgaard sofa */}
   <section className="asgaardSofa">
     <div className="part1_image">
-      <img src="Images/Asgaard sofa 1.png" alt="" />
+      <img src="Images/Asgaard sofa 1.png" alt="Asgaard sofa 1" />
     </div>
     <div className="part2_text">
       <p>New Arrivals</p>
@@ -157,7 +131,7 @@ export default function Home() {
     <p>Find a bright ideal to suit your taste with our great selection</p>
     <div className="card_container">
       <div className="card1">
-        <img src="Images/Going all in1.png" alt="" />
+        <img src="Images/Going all in1.png" alt="Going all in1" />
         <p>Going all-in with millennial design</p>
         <h6>Read More</h6>
         <span id="clock">
@@ -169,7 +143,7 @@ export default function Home() {
         </span>
       </div>
       <div className="card1">
-        <img src="Images/Going all in2.png" alt="" />
+        <img src="Images/Going all in2.png" alt="Going all in2" />
         <p>Going all-in with millennial design</p>
         <h6>Read More</h6>
         <span id="clock">
@@ -181,7 +155,7 @@ export default function Home() {
         </span>
       </div>
       <div className="card1">
-        <img src="Images/Going all in3.png" alt="" />
+        <img src="Images/Going all in3.png" alt="Going all in3" />
         <p>Going all-in with millennial design</p>
         <h6>Read More</h6>
         <span id="clock">

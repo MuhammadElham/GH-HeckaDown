@@ -1,8 +1,6 @@
-// import "@/styles/style.css";  // Style-specific styles
-// import "@/styles/shop.css";  // Shop-specific styles
-import '../styles/style.css';
-import '../styles/shop.css';
-import '../styles/product.css';
+import "../styles/style.css"; // Global styles
+import "../styles/shop.css"; // Shop-specific styles
+import "../styles/product.css"; // Product-specific styles
 
 import type { AppProps } from "next/app";
 

@@ -1,26 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image"; 
-export default function ProjectPage() {
+import Image from "next/image";
+
+export default function ShopPage() {
   return (
-    
-      <>
+    <>
       <Head>
-      
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-    crossOrigin="anonymous"
-    referrerPolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="shop.css" />
-
-
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shop</title>
       </Head>
   {/* Navbar */}
   <section className="navbarpage" style={{ height: "auto", backgroundColor: "transparent" }}>
@@ -71,15 +59,7 @@ export default function ProjectPage() {
     </div>
     {/* Navbar End */}
     {/* Two Section */}
-    {/* <div className="twoSection">
-      <div className="sectionOne">
-        <h5>Rocket single seater</h5>
-        <p>Shop Now</p>
-      </div>
-      <div className="sectionTwo">
-        <img src="/Images/Rocket single seater 1.png" alt="Rocket Single Seater" />
-      </div>
-    </div> */}
+
   </div>
 </section>
 
